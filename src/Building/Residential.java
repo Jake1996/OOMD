@@ -1,9 +1,9 @@
 package Building;
 
 public class Residential extends Site {
-	private String type = "residential";
-	public Residential(long length, long width) {
-		super(length, width);
+	private String type = "Residential";
+	public Residential(int id,long length, long width) {
+		super(id,length, width);
 	}
 
 	@Override

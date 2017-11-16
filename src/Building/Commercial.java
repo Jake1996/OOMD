@@ -2,8 +2,8 @@ package Building;
 
 public class Commercial extends Site {
 	private String type = "Commercial";
-	public Commercial(long length,long width) {
-		super(length, width);
+	protected Commercial(int id,long length,long width) {
+		super(id, length, width);
 	}
 	@Override
 	public String getType() {

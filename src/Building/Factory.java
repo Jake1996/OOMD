@@ -1,9 +1,9 @@
 package Building;
 
 public class Factory extends Site {
-	private String type = "factory";
-	public Factory(long length, long width) {
-		super(length, width);
+	private String type = "Factory";
+	public Factory(int id, long length, long width) {
+		super(id,length, width);
 	}
 
 	@Override

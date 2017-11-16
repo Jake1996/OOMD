@@ -1,14 +1,34 @@
 package Building;
 
 public abstract class Site {
-	private static int siteCount = 0;
 	private long length,width;
 	private int id;
+	private int electricity = 0;
+	private int interent = 0;
+	private int water = 0;
 	
-	public Site(long length,long width) {
+	protected Site(int id,long length,long width) {
 		this.length = length;
 		this.width = width;
-		id = ++siteCount;
+		this.id = id;
+	}
+	public int getElectricity() {
+		return electricity;
+	}
+	public void setElectricity(int electricity) {
+		this.electricity = electricity;
+	}
+	public int getInterent() {
+		return interent;
+	}
+	public void setInterent(int interent) {
+		this.interent = interent;
+	}
+	public int getWater() {
+		return water;
+	}
+	public void setWater(int water) {
+		this.water = water;
 	}
 	public long getLength() {
 		return length;
